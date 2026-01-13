@@ -1,6 +1,19 @@
 {
-    "editor.inlineSuggest.edits.allowCodeShifting": "never",
-    "github.copilot.inlineSuggest.enable": false,
-    "editor.inlineSuggest.enabled": false,
-    "chatgpt.openOnStartup": true
+    // ===== AI 輔助功能 =====
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",  // 禁止 AI 建議移動程式碼
+    "github.copilot.inlineSuggest.enable": false,             // 關閉 GitHub Copilot 建議
+    "editor.inlineSuggest.enabled": false,                    // 關閉所有 inline 建議
+    "chatgpt.openOnStartup": true,
+
+    // ===== 自動完成功能 (為了純手寫練習而關閉) =====
+    "editor.quickSuggestions": {
+        "other": "off",      // 一般程式碼：關閉自動建議
+        "comments": "off",   // 註解中：關閉自動建議
+        "strings": "off"     // 字串中：關閉自動建議
+    },
+    "editor.suggestOnTriggerCharacters": false,        // 關閉 . 或 ( 觸發的提示
+    "editor.parameterHints.enabled": false,            // 關閉函數參數提示
+    "editor.wordBasedSuggestions": "off",              // 關閉基於文件內容的單詞建議
+    "editor.acceptSuggestionOnCommitCharacter": false, // 關閉用特殊字元確認建議
+    "editor.tabCompletion": "off"                      // 關閉 Tab 自動完成
 }
